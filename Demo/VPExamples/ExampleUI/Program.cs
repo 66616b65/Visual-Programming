@@ -50,26 +50,26 @@ namespace ExampleUI
             }
         }
 
-        // static void StringIntern()
-        // {
-        //     string s1 = "str";
-        //     string s2 = new StringBuilder().Append("s").Append("tr").ToString();
-        //     string s3 = String.Intern(s2);
-        //     string s4 = "str";
-        //     //s4 = s1;
-        //     s3 = String.Intern("123");
+        static void StringIntern()
+        {
+            string s1 = "str";
+            string s2 = new StringBuilder().Append("s").Append("tr").ToString();
+            string s3 = String.Intern(s2);
+            string s4 = "str";
+            //s4 = s1;
+            s3 = String.Intern("123");
 
-        //     Console.WriteLine($"s1 = {s1}");
-        //     Console.WriteLine($"s2 = {s2}");
-        //     Console.WriteLine($"s3 = {s3}");
-        //     Console.WriteLine($"s4 = {s4}");
+            Console.WriteLine($"s1 = {s1}");
+            Console.WriteLine($"s2 = {s2}");
+            Console.WriteLine($"s3 = {s3}");
+            Console.WriteLine($"s4 = {s4}");
 
-        //     Console.WriteLine($"s2 has the same reference as s1: {(Object)s2 == (Object)s1}");
-        //     Console.WriteLine($"s3 has the same reference as s1: {(Object)s3 == (Object)s1}");
-        //     Console.WriteLine($"s3 has the same reference as s2: {(Object)s3 == (Object)s2}");
-        //     Console.WriteLine($"s4 has the same reference as s1: {(Object)s4 == (Object)s1}");
-        //     Console.WriteLine($"s4 has the same reference as s3: {(Object)s4 == (Object)s3}");
-        // }
+            Console.WriteLine($"s2 has the same reference as s1: {(Object)s2 == (Object)s1}");
+            Console.WriteLine($"s3 has the same reference as s1: {(Object)s3 == (Object)s1}");
+            Console.WriteLine($"s3 has the same reference as s2: {(Object)s3 == (Object)s2}");
+            Console.WriteLine($"s4 has the same reference as s1: {(Object)s4 == (Object)s1}");
+            Console.WriteLine($"s4 has the same reference as s3: {(Object)s4 == (Object)s3}");
+        }
 
         // static void Delegates()
         // {
